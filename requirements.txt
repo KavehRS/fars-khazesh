@@ -1,0 +1,9 @@
+selenium==3.141.0
+bs4==0.0.1
+numpy
+bs2json==0.0.1
+pandas
+requests
+xlrd
+openpyxl
+psycopg2
