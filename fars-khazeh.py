@@ -14,8 +14,7 @@ import itertools
 import requests
 
 
-
-driver = webdriver.Firefox()
+driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver')
 driver.get("https://www.farsnews.ir/")
 assert "Farsnews" in driver.title
 elem = driver.find_element_by_name("q")
