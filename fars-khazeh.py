@@ -16,17 +16,12 @@ import requests
 
 driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver')
 driver.get("https://www.farsnews.ir/")
-assert "Farsnews" in driver.title
-elem = driver.find_element_by_name("q")
-elem.clear()
-elem.send_keys("pycon")
-elem.send_keys(Keys.RETURN)
-assert "No results found." not in driver.page_source
-driver.close()
 
 
-# country_rank_list=[]
-# global_rank_list=[]
+
+
+# titr=[]
+# date=[]
 # Daily_Pageviews_per_Visitor_list=[]
 # Daily_Time_on_Site_list=[]
 # Bounce_rate_list=[]
@@ -85,16 +80,16 @@ driver.close()
 
 #         driver.close()
 #     except:
-#         print('please check your address')
-#         country_rank_list.append('please check your address')
-#         global_rank_list.append('please check your address')
-#         Daily_Pageviews_per_Visitor_list.append('please check your address')
-#         Daily_Time_on_Site_list.append('please check your address')
-#         Bounce_rate_list.append('please check your address')
-# dic={'نام سایت':url_list,'Bounce rate':Bounce_rate_list,'Daily Pageviews per Visitor list':Daily_Pageviews_per_Visitor_list,
-# 'Daily Time on Site':Daily_Time_on_Site_list,'global rank':global_rank_list,'country rank':country_rank_list}
+         print('please check your address')
+         country_rank_list.append('please check your address')
+         global_rank_list.append('please check your address')
+         Daily_Pageviews_per_Visitor_list.append('please check your address')
+         Daily_Time_on_Site_list.append('please check your address')
+         Bounce_rate_list.append('please check your address')
+ dic={'نام سایت':url_list,'Bounce rate':Bounce_rate_list,'Daily Pageviews per Visitor list':Daily_Pageviews_per_Visitor_list,
+ 'Daily Time on Site':Daily_Time_on_Site_list,'global rank':global_rank_list,'country rank':country_rank_list}
 
-# output = pd.DataFrame(dic)
-# output.to_excel('~/Documents/output.xlsx',index=False)
+ output = pd.DataFrame(dic)
+ output.to_excel('~/Documents/farsnew.xlsx',index=False)
 
 
