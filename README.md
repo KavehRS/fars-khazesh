@@ -30,12 +30,6 @@ A crawler that takes a list of sites and extracts information about them from th
     
 5- Activate Virtualenv:
 
-On windows:
-
-    virtualenv crawler-env\script\activate
-
-On Linux:
-
     source crawler-env/bin/activate
     
 6- Install requirements:
